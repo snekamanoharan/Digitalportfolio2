@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SNEKA M – Portfolio</title>
+<style>
+Body {
+ Font-family: Arial, sans-serif;
+ Margin: 0;
+ Padding: 0;
+ Background-color: #f0f0f0;
+ }
+ Header {
+ Background-color: #333;
+ Color: #fff;
+ Text-align: center;
+ Padding: 2rem 0;
+ Position: relative; /* Add this */
+ }
+ .header-content h1 {
+ Font-size: 2.5rem;
+ }
+ /* Add styles for the round profile picture */
+ .profile-picture {
+ Width: 100px; /* Adjust the size as needed */
+ Height: 100px;
+ Border-radius: 75%; /* Create a circular shape */
+ Object-fit: cover; /* To ensure the image fills the circular area */
+Position: absolute; /* Add this */
+Top: 75px; /* Adjust top position as needed */
+ Left: 75px; /* Adjust left position as needed */
+ }
+ .logo-picture{
+   Width: 150px;
+   Height: 150px;
+   Border-radius: 55%;
+   Object-fit: cover;
+   Position: absolute;
+   Top: 15px;
+   Right: 200px;
+ }
+ Nav {
+ Background-color: #38bdd8;
+ Color: #221e1e;
+ Text-align: center;
+ }
+ Nav ul {
+ List-style-type: none;
+ Padding: 0;
+ }
+ Nav ul li {
+ Display: inline;
+ Margin: 0 20px;
+ }
+ Nav ul li a {
+ Text-decoration: none;
+ Color: #fff;
+ }
+ .section-content {
+ Background-color: #fff;
+ Padding: 2rem;
+ Margin: 1rem;
+ Border-radius: 20px;
+ Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ Text-align: justify;
+ }
+ .download-button {
+ Background-color: #14f300;
+ Color: #fff;
+ Padding: 0.5rem 1rem;
+ Text-decoration: none;
+ Border-radius: 20px;
+ Display: inline-block;
+ Margin-top: 10px;
+ Align-self: center;
+ }
+ .download-button:hover {
+ Background-color: #5ad84e;
+ }
+Footer {
+ Text-align: center;
+ Padding: 1rem 0;
+ Background-color: #333;
+ Color: #fff;
+ }
+ Ul {
+ List-style-type: disc;
+ Padding-left: 20px;
+ }
+ </style>
+</head>
+<body>
+ <header>
+ <div class="header-content">
+ <img src="sneka.jpg" alt="" class="profile-picture">
+ <img src="alagappa.jpg" alt="" class="logo-picture">
+ <h1>SNEKA M</h1>
+ <p>student of Alagappa Govt.Arts college</p>
+ <p>Alagappa university</p>
+ <p>karaikudi</p>
+ </div></div>
+ </header>
+ <nav>
+ <ul>
+ <li><a href="#about">About</a></li>
+ <li><a href="#education">Education</a></li>
+ <li><a href="#skills">Skills</a></li>
+ <li><a href="#projects">Projects</a></li>
+ <li><a href="#resume">Resume</a></li>
+ </ul>
+ </nav>
+ <section id="about">
+ <div class="section-content">
+ <h2>About My-self</h2>
+ <p>Iam a computer science studying final year and I know programming language:</p>
+ <p>c,c++,java,sql database(RDBMS)</p>
+ </div>
+ </section>
+ <section id="education">
+ <div class="section-content">
+ <h2>Education</h2>
+ <p>Alagappa Govt.Arts college</p>
+ <p>B.SC computer science</p>
+ </div>
+ </section>
+ <section id="skills">
+<div class="section-content">
+<h2>Skills</h2>
+ <ul>
+ <li>Web design</li>
+ <li>programming</li>
+ <li>photoshop</li>
+ </ul>
+ </div>
+ </section>
+ <section id="projects">
+ <div class="section-content">
+ <h2>Projects</h2>
+ <ul>
+ <li><a href="#">Java programming</a></li>
+ <li><a href="#">Cloud security IBM</a></li>
+ <!—Add more project links here 
+ </ul>
+ </div>
+ </section>
+ <section id="resume">
+  <div class="section-content">
+ <center>
+ <h2>Resume</h2>
+ <a href="sneka.docx" class="download-button">Download Resume</a>
+ </center>
+ </div>
+ </section>
+ <footer>
+ <p>&copy; 2023 SNEKA M</p>
+ </footer>
+ <script>
+ // Smooth scrolling to section when clicking on navigation links
+ Document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+ Anchor.addEventListener('click', function(e) {
+ e.preventDefault();
+ const targetId = this.getAttribute('href').substring(1);
+ const targetElement = document.getElementById(targetId);
+ if (targetElement) {
+ window.scrollTo({
+ top: targetElement.offsetTop,
+ behavior: 'smooth'
+});
+}
+});
+ });
+ </script>
+</body>
+</html>
+
